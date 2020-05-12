@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Getting Started : Thymeleaf</title>
+</head>
+<body>
+	<p th:text="'Hello, '+${name}+'!'"/>
+	
+	<ul>
+		<li th:each="go : ${list}" th:text="${go}"></li>
+	</ul>
+</body>
+</html>
